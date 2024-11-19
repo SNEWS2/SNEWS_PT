@@ -263,7 +263,6 @@ def test_connection(ctx, firedrill, start_at, patience):
     from .remote_commands import test_connection
 
     test_connection(
-        detector_name=ctx.obj["DETECTOR_NAME"],
         firedrill=firedrill,
         start_at=start_at,
         patience=patience,

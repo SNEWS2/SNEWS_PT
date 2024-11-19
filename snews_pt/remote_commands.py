@@ -14,7 +14,7 @@ from hop.io import StartPosition
 from hop.models import JSONBlob
 
 
-def test_connection(detector_name=None, firedrill=True, start_at="LATEST", patience=8):
+def test_connection(firedrill=True, start_at="LATEST", patience=8):
     """ test the server connection
         It should prompt your whether the
         coincidence script is running in the server
@@ -31,12 +31,12 @@ def test_connection(detector_name=None, firedrill=True, start_at="LATEST", patie
             None
 
     """
-    detector_name = detector_name or os.getenv("DETECTOR_NAME")
+
     default_connection_topic = "kafka://kafka.scimma.org/snews.connection-testing"
     connection_broker = os.getenv("CONNECTION_TEST_TOPIC", default_connection_topic)
     stamp_time = datetime.now(UTC).isoformat()
     message = {'_id': '0_test-connection',
-               'detector_name': detector_name,
+
                'time': stamp_time,
                'status': 'sending',
                'meta':{}}
@@ -64,9 +64,8 @@ def test_connection(detector_name=None, firedrill=True, start_at="LATEST", patie
         for read in ss:
             read = read.content
             if read == message_expected:
-                read_name = click.style(read['detector_name'], fg='green', bold=True)
                 read_time = click.style(read['time'], fg='green', bold=True)
-                click.echo(f"You ({read_name}) have a connection to the server at {read_time}")
+                click.echo(f"You have a connection to the server at {read_time}")
                 confirmed=True
                 break
             else: # if there is no else: continue statement, it does not work
