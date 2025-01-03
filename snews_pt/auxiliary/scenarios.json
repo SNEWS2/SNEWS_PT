@@ -2,13 +2,13 @@
   "simple coincidence": [
     {
       "detector_name": "XENONnT",
-      "neutrino_time": "2030-01-01T12:34:45.678999",
+      "neutrino_time_utc": "2030-01-01T12:34:45.678999",
       "p_val": 0.98,
       "is_test": true
     },
     {
       "detector_name": "DS-20K",
-      "neutrino_time": "2030-01-01T12:34:47.678999",
+      "neutrino_time_utc": "2030-01-01T12:34:47.678999",
       "p_val": 0.98,
       "is_test": true
     }
@@ -16,13 +16,13 @@
   "exact 10s coincidence": [
     {
       "detector_name": "XENONnT",
-      "neutrino_time": "2030-01-01T12:34:45.678999",
+      "neutrino_time_utc": "2030-01-01T12:34:45.678999",
       "p_val": 0.98,
       "is_test": true
     },
     {
       "detector_name": "DUNE",
-      "neutrino_time": "2030-01-01T12:34:55.678999",
+      "neutrino_time_utc": "2030-01-01T12:34:55.678999",
       "p_val": 0.98,
       "is_test": true
     }
@@ -30,25 +30,25 @@
   "two coincidences": [
     {
       "detector_name": "XENONnT",
-      "neutrino_time": "2030-01-01T12:34:45.678999",
+      "neutrino_time_utc": "2030-01-01T12:34:45.678999",
       "p_val": 0.98,
       "is_test": true
     },
     {
       "detector_name": "DS-20K",
-      "neutrino_time": "2030-01-01T12:34:47.678999",
+      "neutrino_time_utc": "2030-01-01T12:34:47.678999",
       "p_val": 0.98,
       "is_test": true
     },
     {
       "detector_name": "JUNO",
-      "neutrino_time": "2030-01-01T12:30:55.678999",
+      "neutrino_time_utc": "2030-01-01T12:30:55.678999",
       "p_val": 0.98,
       "is_test": true
     },
     {
       "detector_name": "Baksan",
-      "neutrino_time": "2030-01-01T12:30:52.678999",
+      "neutrino_time_utc": "2030-01-01T12:30:52.678999",
       "p_val": 0.98,
       "is_test": true
     }
@@ -56,13 +56,13 @@
   "same message submitted twice": [
     {
       "detector_name": "XENONnT",
-      "neutrino_time": "2030-01-01T12:34:45.678999",
+      "neutrino_time_utc": "2030-01-01T12:34:45.678999",
       "p_val": 0.98,
       "is_test": true
     },
     {
       "detector_name": "XENONnT",
-      "neutrino_time": "2030-01-01T12:34:45.678999",
+      "neutrino_time_utc": "2030-01-01T12:34:45.678999",
       "p_val": 0.98,
       "is_test": true
     }
@@ -70,13 +70,13 @@
   "same detector submits within 1sec": [
     {
       "detector_name": "JUNO",
-      "neutrino_time": "2030-01-01T12:30:55.678999",
+      "neutrino_time_utc": "2030-01-01T12:30:55.678999",
       "p_val": 0.98,
       "is_test": true
     },
     {
       "detector_name": "JUNO",
-      "neutrino_time": "2030-01-01T12:30:56.678999",
+      "neutrino_time_utc": "2030-01-01T12:30:56.678999",
       "p_val": 0.98,
       "is_test": true
     }
@@ -84,19 +84,19 @@
   "3 coincident message, out of order": [
     {
       "detector_name": "DUNE",
-      "neutrino_time": "2030-01-01T12:34:55.678999",
+      "neutrino_time_utc": "2030-01-01T12:34:55.678999",
       "p_val": 0.98,
       "is_test": true
     },
     {
       "detector_name": "DS-20K",
-      "neutrino_time": "2030-01-01T12:34:47.678999",
+      "neutrino_time_utc": "2030-01-01T12:34:47.678999",
       "p_val": 0.98,
       "is_test": true
     },
     {
       "detector_name": "XENONnT",
-      "neutrino_time": "2030-01-01T12:34:45.678999",
+      "neutrino_time_utc": "2030-01-01T12:34:45.678999",
       "p_val": 0.98,
       "is_test": true
     }
@@ -104,43 +104,43 @@
   "msgs at 10, 19, 21, 22, 20, 29, 18 seconds": [
     {
       "detector_name": "Borexino",
-      "neutrino_time": "2030-01-01T12:30:10.678999",
+      "neutrino_time_utc": "2030-01-01T12:30:10.678999",
       "p_val": 0.98,
       "is_test": true
     },
     {
       "detector_name": "IceCube",
-      "neutrino_time": "2030-01-01T12:30:19.678999",
+      "neutrino_time_utc": "2030-01-01T12:30:19.678999",
       "p_val": 0.98,
       "is_test": true
     },
     {
       "detector_name": "NOvA",
-      "neutrino_time": "2030-01-01T12:30:21.678999",
+      "neutrino_time_utc": "2030-01-01T12:30:21.678999",
       "p_val": 0.98,
       "is_test": true
     },
     {
       "detector_name": "DS-20K",
-      "neutrino_time": "2030-01-01T12:30:22.678999",
+      "neutrino_time_utc": "2030-01-01T12:30:22.678999",
       "p_val": 0.98,
       "is_test": true
     },
     {
       "detector_name": "HALO",
-      "neutrino_time": "2030-01-01T12:30:20.678999",
+      "neutrino_time_utc": "2030-01-01T12:30:20.678999",
       "p_val": 0.98,
       "is_test": true
     },
     {
       "detector_name": "XENONnT",
-      "neutrino_time": "2030-01-01T12:30:29.678999",
+      "neutrino_time_utc": "2030-01-01T12:30:29.678999",
       "p_val": 0.98,
       "is_test": true
     },
     {
       "detector_name": "JUNO",
-      "neutrino_time": "2030-01-01T12:30:18.678999",
+      "neutrino_time_utc": "2030-01-01T12:30:18.678999",
       "p_val": 0.98,
       "is_test": true
     }

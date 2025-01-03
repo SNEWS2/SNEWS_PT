@@ -1,8 +1,11 @@
 click~=8.1.7
-hop-client~=0.9  # Ensure compatibility with other dependencies
+hop-client~=0.10.0  # Ensure compatibility with other dependencies
 inquirer~=2.8
 ipython~=7.32.0  # Downgraded for compatibility
 numpy~=1.26.3
-python-dotenv~=0.19.2
-setuptools~=62.1.0  # Downgraded for compatibility
+python-dotenv~=0.21.1
+setuptools~=66.1.0
+snews-data-formats~=1.0.0
 wheel~=0.34.2  # Downgraded for compatibility
+pytest~=8.3.2
+pytest-cov~=4.1.0
